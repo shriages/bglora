@@ -1,0 +1,20 @@
+# Core numerics / method math
+torch>=2.5
+numpy>=1.26
+scipy>=1.11
+
+# Hugging Face model + datasets
+transformers>=4.44
+datasets>=2.19
+accelerate>=0.30
+sentencepiece
+huggingface_hub[cli]
+
+# Results storage / analysis
+pandas
+pyarrow
+pyyaml
+matplotlib>=3.7
+
+# MT-Bench judge (OpenAI-compatible API). Only needed for the mtbench task.
+openai>=1.0

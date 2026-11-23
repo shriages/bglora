@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grablora"
+version = "0.1.0"
+description = "GRAB-LoRA: a unified LoRA-family fine-tuning harness"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.5",
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "transformers>=4.44",
+    "datasets>=2.19",
+    "accelerate>=0.30",
+    "sentencepiece",
+    "huggingface_hub",
+    "pandas",
+    "pyarrow",
+    "pyyaml",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+judge = ["openai>=1.0"]
+
+[tool.setuptools.packages.find]
+include = ["grablora*"]
